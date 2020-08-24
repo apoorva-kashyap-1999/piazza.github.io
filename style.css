@@ -1,0 +1,238 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+
+
+    scroll-behavior: smooth;
+}
+ /* CSS Variables */
+ :root{
+     --navbar-height:59px;
+ }
+ /*navbar style */
+ #navbar{
+     display: flex;
+     align-items: center;
+   /*  position: sticky; */
+     top: 0;
+ }
+ /* navbar: logo &images */
+
+ #logo{
+     margin: 10px 34px;
+
+ }
+ #logo img{
+     height:74px;
+     margin:3px 4px;
+ }
+
+ /* navbar:list styling */
+ #navbar{
+     position: relative;
+     top: 0px;
+     align-items: center;
+     display: flex;
+ }
+ #navbar ul{
+     display: flex;
+     font-family: 'Ultra' ;
+    
+ }
+ #navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:100%;
+    z-index: -1; /* to bring the content above which got hidden behind black */
+    opacity: .4;
+
+ }
+ #navbar ul li{
+    
+     list-style: none;
+     font-size: 1.3rem;
+ }
+ #navbar ul li a{
+     color: white;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+     background-color: aliceblue;
+   
+}
+/*home section */
+#home{
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('pexels-ylanite-koppens-1693652.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 450px;
+    width:100%;
+    z-index: -1; /* to bring the content above which got hidden behind black */
+    opacity: .8;
+}
+    #home h1{
+color: white;
+text-align: center;
+font-family:'Patrick Hand';
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Ultra';
+    }
+   
+   /*utility class */
+   .h-primary{
+       font-size: 3.8rem;
+       padding: 12px;
+       font-family: 'Patrick Hand'
+ }
+ .h-secondary{
+     font-size: 2.0rem;
+     padding:12px;  font-family: 'Patrick Hand'
+ }
+ .btn1{
+     display: flex;
+     align-items: center;
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: lightcoral;
+     color: white;
+     margin: auto;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+     
+ }
+ .btn{
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: lightcoral;
+     color: white;
+     margin: 17px 17px;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ .center{
+     text-align: center;
+ }
+ /*Service section */
+ #services{
+     margin: 34px;
+     display: flex;
+ }
+ #services .box{
+     border: 2px solid red;
+     padding: 34px;
+     margin: 25px 6px;
+     border-radius: 23px;
+     background-color: thistle;
+ }
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-family: 'Patrick Hand';
+
+}
+/*client section */
+#client-section{
+  /*  height: 344px; */
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('cherries-5360265_1280.jpg');
+    height: 450px; 
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+  /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 116px;
+
+}
+.client-item{
+    padding: 34px;
+
+}
+/*COntact Section */
+#contact{
+ position: relative;   
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width:100%; 
+  height:100%;
+  z-index: -1;
+  opacity: 0.6; 
+  background: url('pizzafinal.jfif') no-repeat center center/cover;
+}
+#contact-box input{
+    width: 100%;
+    padding: 1.0rem;
+    border-radius:9px ;
+    font-size: 1.3rem;
+
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:34px ;
+}
+#contact-box form{
+    width: 40%;
+   
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Patrick Hand';
+
+}
+#contact-box .btn{
+  
+}
+footer{
+    background: black;
+    color: thistle;
+    padding: 9px;
+}
